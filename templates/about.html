@@ -1,1 +1,158 @@
+{% extends "base.html" %}
 
+{% block title %}About - MAL VIDEOZ PRODUCTION{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Our story, mission, and values</p>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="section about-section">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>MAL VIDEOZ PRODUCTION was founded in 2010 with a simple mission: to capture life's most precious moments through the art of photography and videography. What started as a small passion project has grown into a full-service production studio known for creativity, professionalism, and exceptional quality.</p>
+                <p>Over the years, we've had the privilege of working with hundreds of clients, from newlyweds capturing their special day to musicians bringing their songs to life through visual storytelling. Our team of talented photographers, videographers, and editors are dedicated to turning your vision into reality.</p>
+                <p>At MAL VIDEOZ PRODUCTION, we believe that every project is unique. We take the time to understand your needs, preferences, and goals to deliver results that exceed your expectations. Our commitment to excellence and customer satisfaction has made us a trusted name in the industry.</p>
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/portfolio1.jpg') }}" alt="About Us">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section class="section mission-section">
+    <div class="container">
+        <div class="mission-content">
+            <div class="mission-image">
+                <img src="{{ url_for('static', filename='images/portfolio2.jpg') }}" alt="Our Mission">
+            </div>
+            <div class="mission-text">
+                <h2>Our Mission</h2>
+                <p>Our mission is to provide exceptional photography and videography services that capture the essence of every moment. We strive to create visual stories that evoke emotion, preserve memories, and inspire creativity.</p>
+                <p>We are committed to:</p>
+                <ul>
+                    <li>Delivering the highest quality work in every project</li>
+                    <li>Providing personalized service tailored to each client</li>
+                    <li>Continuously improving our skills and techniques</li>
+                    <li>Maintaining professionalism and integrity in all interactions</li>
+                    <li>Making our services accessible without compromising quality</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- USP Section -->
+<section class="section usp-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Choose MAL VIDEOZ PRODUCTION</h2>
+            <p>What makes us different</p>
+        </div>
+        <div class="usp-grid">
+            <div class="usp-item">
+                <div class="usp-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Award Winning</h3>
+                <p>Recognized with multiple industry awards for excellence in photography and videography</p>
+            </div>
+            <div class="usp-item">
+                <div class="usp-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Experienced Team</h3>
+                <p>Our team brings over 10 years of combined experience in the industry</p>
+            </div>
+            <div class="usp-item">
+                <div class="usp-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Quick Turnaround</h3>
+                <p>We understand the importance of timely delivery without compromising quality</p>
+            </div>
+            <div class="usp-item">
+                <div class="usp-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Client Focused</h3>
+                <p>Your satisfaction is our priority. We work closely with you throughout the process</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="section team-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Meet Our Team</h2>
+            <p>The talented individuals behind MAL VIDEOZ PRODUCTION</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-img">
+                    <img src="{{ url_for('static', filename='images/portfolio3.jpg') }}" alt="Team Member">
+                </div>
+                <div class="member-info">
+                    <h3>Michael Anderson</h3>
+                    <p>Founder & Lead Videographer</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-img">
+                    <img src="{{ url_for('static', filename='images/portfolio4.jpg') }}" alt="Team Member">
+                </div>
+                <div class="member-info">
+                    <h3>Sarah Johnson</h3>
+                    <p>Lead Photographer</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-img">
+                    <img src="{{ url_for('static', filename='images/portfolio5.jpg') }}" alt="Team Member">
+                </div>
+                <div class="member-info">
+                    <h3>David Lee</h3>
+                    <p>Video Editor & Motion Graphics</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Work With Us?</h2>
+            <p>Let's discuss how we can bring your vision to life</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Get In Touch</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
