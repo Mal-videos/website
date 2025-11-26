@@ -1,1 +1,129 @@
+{% extends "base.html" %}
 
+{% block title %}Pricing - MAL VIDEOZ PRODUCTION{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Pricing</h1>
+        <p>Transparent pricing for our services</p>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="section pricing-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Music Video Packages</h2>
+            <p>Choose the package that fits your needs</p>
+        </div>
+        
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Silver Package</h3>
+                    <div class="price">$1,500</div>
+                </div>
+                <div class="pricing-body">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Half-day shoot (4 hours)</li>
+                        <li><i class="fas fa-check"></i> 1 location</li>
+                        <li><i class="fas fa-check"></i> Basic editing</li>
+                        <li><i class="fas fa-check"></i> Color correction</li>
+                        <li><i class="fas fa-check"></i> 2 revisions</li>
+                        <li><i class="fas fa-check"></i> Digital delivery</li>
+                        <li><i class="fas fa-times"></i> Advanced effects</li>
+                        <li><i class="fas fa-times"></i> Drone footage</li>
+                    </ul>
+                </div>
+                <div class="pricing-footer">
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline">Get Quote</a>
+                </div>
+            </div>
+            
+            <div class="pricing-card featured">
+                <div class="pricing-header">
+                    <h3>Gold Package</h3>
+                    <div class="price">$3,000</div>
+                </div>
+                <div class="pricing-body">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Full-day shoot (8 hours)</li>
+                        <li><i class="fas fa-check"></i> Up to 3 locations</li>
+                        <li><i class="fas fa-check"></i> Advanced editing</li>
+                        <li><i class="fas fa-check"></i> Professional color grading</li>
+                        <li><i class="fas fa-check"></i> 5 revisions</li>
+                        <li><i class="fas fa-check"></i> Digital delivery</li>
+                        <li><i class="fas fa-check"></i> Basic visual effects</li>
+                        <li><i class="fas fa-check"></i> Drone footage (if needed)</li>
+                    </ul>
+                </div>
+                <div class="pricing-footer">
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pricing-note">
+            <p>Custom packages available for specific requirements. Contact us for a personalized quote.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Other Services Section -->
+<section class="section other-services">
+    <div class="container">
+        <div class="section-header">
+            <h2>Other Services</h2>
+            <p>Contact us for pricing on photography and other video production services</p>
+        </div>
+        
+        <div class="services-list">
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <div class="service-info">
+                    <h3>Photography Services</h3>
+                    <p>Event photography, portrait sessions, commercial photography, and more</p>
+                </div>
+                <a href="{{ url_for('contact') }}" class="btn btn-outline">Request Quote</a>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-film"></i>
+                </div>
+                <div class="service-info">
+                    <h3>Video Production</h3>
+                    <p>Corporate videos, documentaries, commercials, and special projects</p>
+                </div>
+                <a href="{{ url_for('contact') }}" class="btn btn-outline">Request Quote</a>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <div class="service-info">
+                    <h3>Post Production</h3>
+                    <p>Editing, color grading, visual effects, and audio production services</p>
+                </div>
+                <a href="{{ url_for('contact') }}" class="btn btn-outline">Request Quote</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Have Questions About Pricing?</h2>
+            <p>Our team is happy to provide detailed quotes based on your specific needs</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Contact Us</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
