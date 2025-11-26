@@ -1,1 +1,116 @@
+{% extends "base.html" %}
 
+{% block title %}Services - MAL VIDEOZ PRODUCTION{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Our Services</h1>
+        <p>Professional photography and videography solutions</p>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="section services-section">
+    <div class="container">
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3>Music Videos</h3>
+                <p>Complete music video production from concept to final edit. We work closely with artists to create visually stunning music videos that capture the essence of their music.</p>
+                <ul>
+                    <li>Concept development</li>
+                    <li>Location scouting</li>
+                    <li>Professional filming</li>
+                    <li>Post-production editing</li>
+                    <li>Color grading</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h3>Event Photography</h3>
+                <p>Capturing all the special moments of your events with professional photography services for weddings, corporate events, concerts, and more.</p>
+                <ul>
+                    <li>Wedding photography</li>
+                    <li>Corporate events</li>
+                    <li>Concerts and performances</li>
+                    <li>Parties and celebrations</li>
+                    <li>Photo editing and retouching</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-film"></i>
+                </div>
+                <h3>Video Production</h3>
+                <p>Full-service video production for commercials, documentaries, corporate videos, and special projects. We handle everything from pre-production to final delivery.</p>
+                <ul>
+                    <li>Script writing</li>
+                    <li>Storyboarding</li>
+                    <li>Professional filming</li>
+                    <li>Editing and post-production</li>
+                    <li>Animation and motion graphics</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-portrait"></i>
+                </div>
+                <h3>Portrait Photography</h3>
+                <p>Professional portrait sessions for individuals, families, and professionals. We create beautiful portraits that capture personality and style.</p>
+                <ul>
+                    <li>Headshots</li>
+                    <li>Family portraits</li>
+                    <li>Professional portraits</li>
+                    <li>Studio sessions</li>
+                    <li>Location shoots</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3>Commercial Photography</h3>
+                <p>High-quality commercial photography for businesses, products, real estate, and marketing materials. We help showcase your business in the best light.</p>
+                <ul>
+                    <li>Product photography</li>
+                    <li>Real estate photography</li>
+                    <li>Food photography</li>
+                    <li>Business headshots</li>
+                    <li>Marketing materials</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h3>Post Production</h3>
+                <p>Professional post-production services including video editing, color grading, visual effects, and audio production to perfect your project.</p>
+                <ul>
+                    <li>Video editing</li>
+                    <li>Color grading</li>
+                    <li>Visual effects</li>
+                    <li>Audio production</li>
+                    <li>Motion graphics</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Need a Custom Solution?</h2>
+            <p>Contact us for a personalized quote tailored to your specific needs</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Get A Quote</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
