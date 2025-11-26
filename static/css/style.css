@@ -1,0 +1,18 @@
+body { margin: 0; font-family: 'Poppins', sans-serif; }
+header { background: #121212; color: white; padding: 1rem 2rem; }
+.navbar { display: flex; justify-content: space-between; align-items: center; }
+.nav-links { list-style: none; display: flex; gap: 1rem; }
+.nav-links li a { color: white; text-decoration: none; transition: 0.3s; }
+.nav-links li a:hover { color: #FF7A37; }
+.call-btn { background: #FF7A37; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; }
+.hero { text-align: center; padding: 4rem 2rem; background: url('../images/placeholder.jpg') center/cover no-repeat; color: white; }
+.cards { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 2rem 0; }
+.card { background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 10px; text-align: center; width: 200px; transition: 0.3s; }
+.card:hover { transform: translateY(-5px); background: rgba(255,255,255,0.2); }
+.usps ul { list-style: disc; padding-left: 2rem; margin: 2rem 0; }
+footer { background: #121212; color: white; text-align: center; padding: 1rem; }
+footer .social-links a { margin: 0 0.5rem; color: white; text-decoration: none; }
+@media (max-width: 768px) {
+    .cards { flex-direction: column; align-items: center; }
+    .nav-links { flex-direction: column; display: none; }
+       }
