@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero">
+    <h1>Welcome to {{ studio.name }}</h1>
+    <p>Capturing your moments with modern style & high-quality visuals</p>
+    <a class="btn" href="{{ url_for('contact') }}">Book Now</a>
+</section>
+
+<section class="services-preview">
+    <h2>Our Services</h2>
+    <div class="cards">
+        {% for service in studio.services %}
+        <div class="card">
+            <i class="fas fa-camera"></i>
+            <h3>{{ service }}</h3>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="usps">
+    <h2>Why Choose Us</h2>
+    <ul>
+        {% for usp in studio.usps %}
+        <li>{{ usp }}</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}
