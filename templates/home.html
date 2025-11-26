@@ -1,30 +1,114 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
+
+{% block title %}Home - MAL VIDEOZ PRODUCTION{% endblock %}
 
 {% block content %}
+<!-- Hero Section -->
 <section class="hero">
-    <h1>Welcome to {{ studio.name }}</h1>
-    <p>Capturing your moments with modern style & high-quality visuals</p>
-    <a class="btn" href="{{ url_for('contact') }}">Book Now</a>
-</section>
-
-<section class="services-preview">
-    <h2>Our Services</h2>
-    <div class="cards">
-        {% for service in studio.services %}
-        <div class="card">
-            <i class="fas fa-camera"></i>
-            <h3>{{ service }}</h3>
+    <div class="hero-bg">
+        <img src="{{ url_for('static', filename='images/hero-bg.jpg') }}" alt="Hero Background">
+    </div>
+    <div class="hero-content">
+        <h1>Professional Photography & Videography</h1>
+        <p>Capturing your special moments with creativity and precision</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('services') }}" class="btn btn-primary">Our Services</a>
+            <a href="{{ url_for('portfolio') }}" class="btn btn-secondary">View Portfolio</a>
         </div>
-        {% endfor %}
     </div>
 </section>
 
-<section class="usps">
-    <h2>Why Choose Us</h2>
-    <ul>
-        {% for usp in studio.usps %}
-        <li>{{ usp }}</li>
-        {% endfor %}
-    </ul>
+<!-- Services Preview -->
+<section class="section services-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Services</h2>
+            <p>Professional services tailored to your needs</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3>Music Videos</h3>
+                <p>High-quality music video production for artists and bands</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h3>Photography</h3>
+                <p>Professional photography for events, portraits, and commercial needs</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-film"></i>
+                </div>
+                <h3>Video Production</h3>
+                <p>Complete video production services from concept to final edit</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h3>Post Production</h3>
+                <p>Professional editing, color grading, and visual effects</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="{{ url_for('services') }}" class="btn btn-outline">View All Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- USP Section -->
+<section class="section usp-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Choose Us</h2>
+            <p>What sets MAL VIDEOZ PRODUCTION apart</p>
+        </div>
+        <div class="usp-grid">
+            <div class="usp-item">
+                <div class="usp-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Award Winning</h3>
+                <p>Recognized for excellence in photography and videography</p>
+            </div>
+            <div class="usp-item">
+                <div class="usp-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Experienced Team</h3>
+                <p>10+ years of industry experience with top professionals</p>
+            </div>
+            <div class="usp-item">
+                <div class="usp-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Quick Turnaround</h3>
+                <p>Fast delivery without compromising on quality</p>
+            </div>
+            <div class="usp-item">
+                <div class="usp-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Client Focused</h3>
+                <p>Your vision is our priority, we work closely with you</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Create Something Amazing?</h2>
+            <p>Let's discuss your project and bring your vision to life</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Get In Touch</a>
+        </div>
+    </div>
 </section>
 {% endblock %}
